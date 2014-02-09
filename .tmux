@@ -7,7 +7,7 @@ setw -g xterm-keys on
 set-option -g default-terminal "screen-256color"
 
 # Set reload key to r
-bind r source-file ~/.tmux.conf
+bind r source-file ~/.tmux
 
 # Count sessions start at 1
 set -g base-index 1
