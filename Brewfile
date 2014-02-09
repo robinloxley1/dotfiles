@@ -17,8 +17,8 @@ install wget --enable-iri
 
 # Install RingoJS and Narwhal
 # Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
-install ringojs
-install narwhal
+#install ringojs
+#install narwhal
 
 # Install more recent versions of some OS X tools
 install vim --override-system-vi
@@ -37,16 +37,16 @@ install git
 #install imagemagick
 install lynx
 install node
-install pigz
+#install pigz
 install rename
-install rhino
+#install rhino
 install tree
-install webkit2png
-install zopfli
-install p7zip
+#install webkit2png
+#install zopfli
+#install p7zip
 
 tap homebrew/versions
-install lua52
+#install lua52
 
 # Remove outdated versions from the cellar
 cleanup
