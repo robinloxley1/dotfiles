@@ -8,7 +8,7 @@ setup_docker() {
 
 setup_commons () {
   sudo apt-get update
-  sudo apt-get install -y vim git tmux curl wget
+  sudo apt-get install -y vim git tmux curl wget unzip build-essential libssl-dev libffi-dev python-dev
 }
 
 setup_repo () {
@@ -16,9 +16,15 @@ setup_repo () {
   sudo bash -c 'echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" > /etc/apt/sources.list.d/docker.list'
 }
 
+setup_python() {
+  sudo apt-get install -y python-dev python-pip
+  sudo pip install virtualenv
+}
+
 setup_all () {
   setup_repo
   setup_commons
+  setup_python
   setup_docker
 }
 
