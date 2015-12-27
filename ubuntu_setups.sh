@@ -27,11 +27,24 @@ setup_python() {
   sudo pip install virtualenv
 }
 
+setup_scala() {
+  sudo apt-get remove scala-library scala
+  wget http://www.scala-lang.org/files/archive/scala-2.10.6.deb
+  sudo dpkg -i scala-2.10.6.deb
+
+  echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
+  sudo apt-get update
+  sudo apt-get install scala sbt
+}
+
 setup_all () {
   setup_repo
   setup_commons
   setup_python
   setup_docker
+  setup_scala
 }
 
-setup_all
+#setup_all
+#setup_scala
