@@ -38,6 +38,12 @@ setup_scala() {
   sudo apt-get install scala sbt
 }
 
+setup_spark() {
+  wget http://d3kbcqa49mib13.cloudfront.net/spark-1.5.2-bin-hadoop2.6.tgz 
+  tar xf spark-1.5.2-bin-hadoop2.6.tgz
+  sudo mv spark-1.5.2-bin-hadoop2.6 /opt/spark-1.5.2-bin-hadoop2.6
+}
+
 setup_all () {
   setup_repo
   setup_commons
