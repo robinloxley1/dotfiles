@@ -8,7 +8,7 @@ setup_docker() {
 
 setup_commons () {
   sudo apt-get update
-  sudo apt-get install -y vim git tmux curl wget unzip build-essential libssl-dev libffi-dev python-dev
+  sudo apt-get install -y vim git tmux curl wget unzip build-essential libssl-dev libffi-dev python-dev tree
   sudo apt-get install python-software-properties
   sudo apt-get install oracle-java7-installer 
 }
