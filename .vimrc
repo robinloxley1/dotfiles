@@ -9,6 +9,9 @@ set nocompatible
 if $TMUX == ''
   set clipboard+=unnamed
 endif
+
+set clipboard=unnamed
+
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
