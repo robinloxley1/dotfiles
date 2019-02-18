@@ -93,17 +93,6 @@
 
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
 	# [default] trailing-space: looks for spaces at the end of a line
-<<<<<<< HEAD
-	# [default] space-before-tab: looks for spaces before tabs at the beginning of
-	# a line
-	# Remove whitespace=indent-with-non-tab as error since lines that are easily indented with
-  # 8 or more spaces.
-	whitespace = space-before-tab,trailing-space
-	# Make `git rebase` safer on OS X
-	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
-	trustctime = false
-  editor = vim
-=======
 	# [default] space-before-tab: looks for spaces before tabs at the beginning of a line
 	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
 
@@ -119,7 +108,6 @@
 	# https://git-scm.com/docs/git-update-index#_untracked_cache
 	untrackedCache = true
 
->>>>>>> upstream/master
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
@@ -148,7 +136,7 @@
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
+	gpgsign = false
 
 [diff]
 
