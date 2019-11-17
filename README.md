@@ -86,6 +86,10 @@ Some of the functionality of these dotfiles depends on formulae installed by `br
 ### download anaconda3
 
 ### set up zsh
+https://github.com/robbyrussell/oh-my-zsh
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 ## Feedback
 
